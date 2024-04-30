@@ -1,0 +1,66 @@
+body {
+    background: rgb(73, 255, 0);
+    background: radial-gradient(circle, rgba(73, 255, 0, 1) 0%, rgba(51, 179, 0, 1) 64%);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0.03em white;
+    line-height: 1em;
+
+    font-size: 100px;
+    margin-bottom: 0px;
+
+}
+
+h1,
+h3,
+label,
+h4 {
+    font-family: Copperplate, 'Times New Roman', Times, fantasy;
+    margin-top: 0;
+}
+
+h3,
+label {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 35px;
+}
+
+img {
+    height: 60vh;
+    /* border-radius: 10px; */
+    filter: drop-shadow(10px 10px 10px black);
+    visibility: visible;
+}
+
+input,
+button {
+    margin-bottom: 20px;
+    font-size: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px black);
+    color: black;
+    font-family: Copperplate, 'Times New Roman', Times, fantasy;
+}
+
+h3 input,
+button {
+    background-color: green;
+}
+
+button {
+    margin: 20px 50px;
+    size: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

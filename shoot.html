@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <title> Shoot! </title>
+  <link rel="stylesheet" href="./shoot.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="shoot.js"></script>
+</head>
+
+<body style="text-align:center">
+
+  <h3 id="turnnum">%(turnnum)d</h3>
+  <h3 id="playernum">%(playernum)d</h3>
+  <h3 id="p1low">%(p1low)d</h3>
+
+  <table>
+    <tr style="text-align:center;">
+      <td>
+        <p id="p1name">%(p1name)s</p>
+        <div id="p1stuff"></div>
+      </td>
+      <td>
+        <h1 id="gamename">%(gamename)s</h1>
+        <div id="svgCell">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg width="700" height="1375" viewBox="-25 -25 1400 2750" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="1350" height="2700" x="0" y="0" fill="#C0D0C0" />
+            <rect width="1400" height="25" x="-25" y="-25" fill="darkgreen" />
+            <rect width="1400" height="25" x="-25" y="2700" fill="darkgreen" />
+            <rect width="25" height="2750" x="-25" y="-25" fill="darkgreen" />
+            <rect width="25" height="2750" x="1350" y="-25" fill="darkgreen" />
+            <circle cx="0" cy="0" r="114" fill="black" />
+            <circle cx="0" cy="1350" r="114" fill="black" />
+            <circle cx="0" cy="2700" r="114" fill="black" />
+            <circle cx="1350" cy="0" r="114" fill="black" />
+            <circle cx="1350" cy="1350" r="114" fill="black" />
+            <circle cx="1350" cy="2700" r="114" fill="black" />
+            <circle class="ball" id="que" cx="675" cy="2025" r="28" fill="WHITE" />
+            <circle class="ball" cx="675" cy="621" r="28" fill="YELLOW" />
+            <circle class="ball" cx="704" cy="569" r="28" fill="LIGHTBLUE" />
+            <circle class="ball" cx="643" cy="569" r="28" fill="LIGHTYELLOW" />
+            <circle class="ball" cx="734" cy="515" r="28" fill="BROWN" />
+            <circle class="ball" cx="674" cy="516" r="28" fill="BLACK" />
+            <circle class="ball" cx="613" cy="516" r="28" fill="GREEN" />
+            <circle class="ball" cx="766" cy="464" r="28" fill="PINK" />
+            <circle class="ball" cx="705" cy="465" r="28" fill="ORANGE" />
+            <circle class="ball" cx="643" cy="463" r="28" fill="MEDIUMPURPLE" />
+            <circle class="ball" cx="583" cy="462" r="28" fill="PURPLE" />
+            <circle class="ball" cx="796" cy="409" r="28" fill="LIGHTSALMON" />
+            <circle class="ball" cx="735" cy="409" r="28" fill="RED" />
+            <circle class="ball" cx="674" cy="411" r="28" fill="LIGHTGREEN" />
+            <circle class="ball" cx="613" cy="411" r="28" fill="BLUE" />
+            <circle class="ball" cx="552" cy="411" r="28" fill="SANDYBROWN" />
+          </svg>
+        </div>
+        <button onclick="start()">PLAY</button>
+        <button onclick="reset()">REPLAY</button>
+        <button onclick="pause()">PAUSE</button><br>
+        <button onclick="slow()">SLOWMO</button><br>
+        <button onclick="backToTitle()" style="font-size:25px">BACK TO TITLE</button><br>
+      </td>
+
+      <td>
+        <p id="p2name">%(p2name)s</p>
+        <div id="p2stuff"></div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+    background: rgb(73, 255, 0);
+    background: radial-gradient(circle, rgba(73, 255, 0, 1) 0%, rgba(51, 179, 0, 1) 64%);
+    /* margin: 0; */
+}
+
+svg {
+    /* background-color: rgb(73, 255, 0); */
+    object-position: center;
+    height: 90vh;
+    width: auto;
+    /* display: inline; */
+}
+
+button {
+    background-color: green;
+    size: auto;
+    font-size: 20px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    font-family: Copperplate, 'Times New Roman', Times, fantasy;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 0 5px;
+}
+
+#gamename {
+    font-family: Copperplate, 'Times New Roman', Times, fantasy;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#p1name,
+#p2name {
+    font-size: 30px;
+    font-family: Copperplate, 'Times New Roman', Times, fantasy;
+    margin-bottom: 0;
+}
+
+form,
+h3 {
+    display: none;
+    margin: 0;
+    line-height: 0;
+}
