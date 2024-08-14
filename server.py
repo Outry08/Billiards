@@ -624,7 +624,10 @@ def write_svg( table_id, table ):
 
 
 if __name__ == "__main__":
-    httpd = HTTPServer( ( 'localhost', int(sys.argv[1]) ), RequestHandler )
+    # httpd = HTTPServer( ( 'localhost', int(sys.argv[1]) ), RequestHandler )
+    httpd = HTTPServer( ( '0.0.0.0', int(sys.argv[1]) ), RequestHandler )
     print( "Server listing in port:  ", int(sys.argv[1]) )
     httpd.serve_forever()
+
+    
     
