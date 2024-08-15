@@ -21,10 +21,10 @@ phylib_wrap.c:
 	swig -python phylib.i
 	
 phylib_wrap.o : phylib_wrap.c
-	$(CC) $(CFLAGS) -c phylib_wrap.c -I/Library/Frameworks/Python.framework/Versions/3.11/include/python3.11/ -fPIC -o phylib_wrap.o
+	$(CC) $(CFLAGS) -c phylib_wrap.c -I/usr/include/python3.10 -fPIC -o phylib_wrap.o
 
 _phylib.so : phylib_wrap.o libphylib.so
-	$(CC) $(CFLAGS) phylib_wrap.o -shared -L. -L/Library/Frameworks/Python.framework/Versions/3.11/lib -lpython3.11 -lphylib -o _phylib.so
+	$(CC) $(CFLAGS) phylib_wrap.o -shared -L. -L/usr/lib/python3.10 -lpython3.11 -lphylib -o _phylib.so
 
 phylib.o : phylib.c phylib.h
 	$(CC) $(CFLAGS) -fPIC -c phylib.c -o phylib.o
